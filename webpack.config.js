@@ -17,6 +17,10 @@ const client = {
         ignored: /node_modules/
     },
 
+    resolve: {
+        extensions: [".ts", ".js"],
+    },
+
     output: {
         filename: '[name].client.js',
         path: path.resolve(buildPath, 'client'),
@@ -38,6 +42,10 @@ const server = {
 
     watchOptions: {
         ignored: /node_modules/
+    },
+
+    resolve: {
+        extensions: [".ts", ".js"],
     },
 
     output: {
