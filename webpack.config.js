@@ -2,7 +2,7 @@ const path = require('path');
 const buildPath = path.resolve(__dirname, 'dist');
 
 const client = {
-    entry: './src/client/client.ts',
+    entry: './src/client/MarkerHandler.ts',
     module: {
         rules: [
             {
